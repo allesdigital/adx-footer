@@ -1,13 +1,14 @@
 window.adxApp =
   window.adxApp ||
   (() => {
-    const embeddedFooters = document.querySelectorAll(".adx-footer");
-    if (embeddedFooters.length) {
-      for (const embeddedFooter of embeddedFooters) {
-        embeddedFooter.appendChild(createFooterElement());
-      }
+    var isFooter = document.getElementById("adx-footer");
+    if (isFooter != null) {
+      const newFooter = createFooterElement();
+      isFooter.replaceWith(newFooter);
+      console.log("ersetzt!");
     } else {
       document.body.appendChild(createFooterElement());
+      console.log("hinzugefügt!");
     }
 
     function createFooterElement() {
