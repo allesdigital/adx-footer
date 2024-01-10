@@ -3,8 +3,8 @@ window.adxApp =
   (() => {
     var isFooter = document.getElementById("adx-footer");
     if (isFooter != null) {
-      const newFooter = createFooterElement();
-      isFooter.replaceWith(newFooter);
+      const adxFooter = createFooterElement();
+      isFooter.replaceWith(adxFooter);
     } else {
       document.body.appendChild(createFooterElement());
     }
