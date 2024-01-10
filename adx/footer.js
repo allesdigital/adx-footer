@@ -5,10 +5,8 @@ window.adxApp =
     if (isFooter != null) {
       const newFooter = createFooterElement();
       isFooter.replaceWith(newFooter);
-      console.log("ersetzt!");
     } else {
       document.body.appendChild(createFooterElement());
-      console.log("hinzugefügt!");
     }
 
     function createFooterElement() {
