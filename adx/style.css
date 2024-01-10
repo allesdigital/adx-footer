@@ -22,12 +22,11 @@
   justify-content: center;
 }
 
-.font {
+p {
   color: white;
   padding: 0.25rem;
-  text-decoration: none;
 }
 
-.underline {
-  text-decoration: underline;
+a {
+  color: white;
 }
