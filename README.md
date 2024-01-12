@@ -4,7 +4,7 @@ Der Footer wird mit Hilfe folgendem Javascriptcode in die Website eingefügt:
 
 `<script
 async
-src="http://localhost:3001/footer.js"
+src="https://embed.allesdigital.io/footer.js"
 charset="utf-8">
 </script>`
 
@@ -19,7 +19,7 @@ The footer is inserted into the website using the following JavaScript code:
 
 `<script
 async
-src="http://localhost:3001/footer.js"
+src="https://embed.allesdigital.io/footer.js"
 charset="utf-8">
 </script>`
 
