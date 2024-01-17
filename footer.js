@@ -3,7 +3,7 @@ window.adxApp =
   (() => {
     var isFooter = document.getElementById("adx-footer");
     console.log("Vor if-Abfrage: " + isFooter);
-    if (isFooter != null) {
+    if (isFooter !== null) {
       const adxFooter = createFooterElement();
       isFooter.replaceWith(adxFooter);
       console.log("erste Bedingung");
