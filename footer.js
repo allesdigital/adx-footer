@@ -7,8 +7,8 @@ window.adxApp =
       isFooter.replaceWith(adxFooter);
       console.log("erste Bedingung");
     } else {
-      document.body.appendChild(createFooterElement());
       console.log("zweite Bedingung");
+      document.body.appendChild(createFooterElement());
     }
 
     function createFooterElement() {
