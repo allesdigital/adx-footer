@@ -2,12 +2,15 @@ window.adxApp =
   window.adxApp ||
   (() => {
     var isFooter = document.getElementById("adx-footer");
+    console.log("Vor if-Abfrage: " + isFooter);
     if (isFooter != null) {
       const adxFooter = createFooterElement();
       isFooter.replaceWith(adxFooter);
       console.log("erste Bedingung");
+      console.log(isFooter);
     } else {
       console.log("zweite Bedingung");
+      console.log(isFooter);
       document.body.appendChild(createFooterElement());
     }
 
