@@ -27,4 +27,4 @@ window.adxApp =
       text.appendChild(link);
       return div;
     }
-  })();
+  });
