@@ -20,7 +20,7 @@ window.adxApp =
       const text = document.createElement("p");
       const link = document.createElement("a");
 
-      text.innerText = "Made with ♥ by ";
+      text.innerText = "Made with ♥ by" + charCodeAt(32);
       link.innerText = "allesdigital";
       link.href = "https://www.allesdigital.io";
 
