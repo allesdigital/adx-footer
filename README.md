@@ -23,6 +23,7 @@ useHead({
 </script>`
 
 Falls der ADX-Footer einen bisherrigen Footer ersetzen soll, dieser aber als Backup erhalten bleiben soll, muss die zu ersetzende Div-Box einfach `id="adx-footer"` besitzen und sie wird mit dem ADX-Footer ersetzt.
+
 Falls der Body keine Div-Box mit dieser ID besitzt wird der ADX-Footer automatisch am Ende des Bodys eingefügt.
 
 Besten Falls sollte aber mindestens immer folgende Div-Box vorhanden sein, damit ein Backup vorhanden ist, falls das javascript nicht geladen werden kann.
@@ -31,6 +32,7 @@ Besten Falls sollte aber mindestens immer folgende Div-Box vorhanden sein, damit
           <a href="https://www.allesdigital.io">allesdigital</a></div>`
 
 ---------- English Version----------
+
 Usage of the ADX Footer
 
 The footer is inserted into the websites head using the following JavaScript code:
