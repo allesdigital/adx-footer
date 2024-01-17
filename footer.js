@@ -1,8 +1,13 @@
 window.adxApp =
   window.adxApp ||
-  (() => {
-    var isFooter = document.getElementById("adx-footer");
-    console.log("Vor if-Abfrage: " + isFooter);
+  (async () => {
+    const isFooter = await new Promise((resolve) => {
+      document.addEventListener("DOMContentLoaded", () => {
+        const footerElement = document.getElementById("adx-footer");
+        resolve(footerElement);
+      });
+    });
+
     if (isFooter !== null) {
       const adxFooter = createFooterElement();
       isFooter.replaceWith(adxFooter);
