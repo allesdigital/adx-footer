@@ -5,8 +5,10 @@ window.adxApp =
     if (isFooter != null) {
       const adxFooter = createFooterElement();
       isFooter.replaceWith(adxFooter);
+      console.log("erste Bedingung");
     } else {
       document.body.appendChild(createFooterElement());
+      console.log("zweite Bedingung");
     }
 
     function createFooterElement() {
